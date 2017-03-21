@@ -12,18 +12,17 @@ namespace Area
         {
             Console.WriteLine("What is the radius of your circle?");
             string input = Console.ReadLine();
-            float radius = System.Convert.ToInt32(input);
+            double radius = Convert.ToInt32(input);
             if (radius <= 0)
             {
                 Console.WriteLine("That is not valid");
-                Console.ReadLine();
             }
             else
             {
                 var area = 3.14 * (radius * radius);
                 Console.WriteLine("The area of your circle is " + area);
-                Console.ReadLine(); }
-
+                Console.ReadLine();
+            }
         }
     }
 }
